@@ -10,7 +10,9 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <a href="home.html">Bruno Marcon</a>
+        <div class="back-header">
+          <a href="home.html" class="header-title">Bruno Marcon</a>
+        </div>
       </nav>
       <nav class="nav-top">
         <a href="../about/about.html">Sobre</a>
@@ -19,12 +21,32 @@
       </nav>
     </header>
     <main class="flex-main">
-      <section id="profile" class="profile-col">
-        <h1 class="profile-title">Saudações,</h1>
-        <h2>Me chamo</h2>
-        <h2><strong>Bruno Marcon</strong></h2>
-        <h3>Desenvolvedor Web</h3>
-      </section>
+      <article class="home-container">
+        <section id="profile" class="profile-col">
+          <div class="content-elements">
+            <h1 class="center-content">Saudações</h1>
+            <h2 class="center-content">
+              Me chamo <strong>Bruno Marcon</strong>
+            </h2>
+            <p>Desenvolvedor Web</p>
+          </div>
+          <figure class="class="figure-elements">
+            <img src="../Src/img/pc-azul-mobile.png.png" alt="">
+          </figure>
+        </section>
+      </article>
+      <article class="second-content">
+        <section class="second-section-content">
+          <div class="more-about-me">
+            <h1>UM POUCO DA MINHA HISTÓRIA...</h1>
+            <p>Desde pequeno fui me interessando por esse mundo da tecnologia, sonhando sempre em fazer parte dele. E com orgulho posso dizer que estou nesse meio a 4 anos.
+            </p>
+            <p>
+              Atualmente sou estudante de Ciencia da computação no Instituto Federal Catarinense, desenvolvo projetos Front-End e Back-End com React, JavaScript, Next, Prisma, Docker,Vite, TypeScript. Além disso sou Supervidor de TI em dois Hospitais
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
   </body>
 </html>
