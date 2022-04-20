@@ -92,6 +92,7 @@ a{
   width: 22rem;
   border-radius: 400px;
   align-self: center;
+  box-shadow: -0.8rem 0.40rem 0.5rem #00000040
 }
 .second-content{
   background-color: var(--back-historia);
@@ -191,12 +192,13 @@ a{
   width: 100%;
 }
 .art-contato h1{
-  font-size: 4rem;
+  font-size: 5rem;
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 50%;
+  width: 100%;
   color: var(--hover);
+  border-bottom: #e4dfda solid 5px;
 }
 .art-contato h1:hover{
   color:var(--back-historia);
@@ -211,29 +213,38 @@ a{
   justify-content: center;
   flex-flow: wrap;
   margin-top: 2rem;
-  width: 50%;
+  width: 100%;
 }
 .div-contato a img{
   align-items: center;
   display: flex;
-  height: 5rem;
+  height: 8rem;
 }
 .div-contato a{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-left: 2rem;
+  padding: 2rem 10rem 2rem 10rem;
 }
-@media only screen and(min-width:1000px) {
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 4rem;
+  font-size: 1.2rem;
+}
+@media screen and(max-width:1282px) {
   .header{
     justify-content: center;
     margin: 1rem;
-  }
-  .header h1{
-    font-size: 1.5rem;
-  }
-  .nav-top{
+  }.nav-top{
     display: none;
+  }.header-title{
+    font-size: 2rem;
+  }main{
+    margin: 1rem;
+    padding:0 ;
   }
 }
   
