@@ -1,96 +1,186 @@
-@import url();
-body{
+*, 
+::before, 
+:after {
+  box-sizing: border-box;
   font-family: helvetica;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  text-decoration: none;
+}
+:root{
+  --titulo-nome:#db2b39;
+  --titulo-profile: #db2b39;
+  --back-profile:#e4dfda;
+  --back-historia:#38040e;
+  --border-historia: #e4dfda;
+  --titulo-conheci:#595A4A;
 }
 a:hover {
   text-decoration: none;
-  color: #000b84;
+  color: var(--titulo-nome);
 }
 a{
   text-decoration: none;
   font-weight:bolder;
   color: black;
-  transition: 0.90s;
-}
-.nav img{
-  width: 150px;
-  height: 150px;
-  padding-left: 1rem;
+  transition: 0.5s;
 }
 .header{
-  display: flex;
   justify-content: space-between;
-  flex-direction:row;
   align-items: center;
-  padding: 1rem;
-  
+  display: flex;
+  margin: 2rem 4rem;
 }
 .header-title{
   padding-left: 1rem;
   text-decoration: none;
-  color: #000b84;
-  font-size: 3rem;
+  color: var(--titulo-nome);
+  font-size: 4rem;
+}
+.nav-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .nav-top a{
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 /* First Conteiner */
 .home-container{
   display: flex;
   justify-content: space-evenly;
-  margin: 4rem 0 4rem 3rem;
+  margin: 2rem 4rem;
 }
 .profile-col{
   align-items: center;
-    background-color: #E2E9EC;
-    border-bottom-left-radius: 15rem;
-    border-top-left-radius: 15rem;
+    background-color: var(--back-profile);
+    border-bottom-left-radius: 20rem;
+    border-top-left-radius: 20rem;
     display: flex;
     justify-content: center;
-    padding: 1rem 3rem;
     width: 100%;
 }
 .content-elements{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 90%;
-  line-height: 5%;
+  width: 50%;
 }
 .content-elements h1{
-  font-size: 3rem;
+  font-size: 4rem;
+  align-self: center;
 }
 .content-elements h2{
-  font-size: 2rem;
+  font-size: 3rem;
   font-family:'helvetica' sans-serif;
+  align-self: center;
 }
 .content-elements p{
-  font-size: 1.3rem;
+  align-self: center;
+  font-size: 1.5rem;
   color: gray;
 }
 .content-elements h2 strong{
   transition: 0.90s;
-  color: #000c8c;
+  color: var(--titulo-profile);
 }
-img{
-  height: 300px;
+.content-img{
+  width: 20rem;
+  border-radius: 200px;
+  align-self: center;
 }
-/* Second Conteiner */
 .second-content{
-  background-color: #030836;
+  background-color: var(--back-historia);
   color: white;
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 2rem 4rem;
 }
 .second-content h1{
-  border-bottom: solid white 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .second-section-content{
   width: 50%;
 }
+.first-paragrafo{
+  border-top: solid var(--border-historia) 0.2rem;
+}
+.second-paragrafo{
+  border-bottom: solid var(--border-historia) 0.2rem;
+}
+.second-content p{
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.content-about{
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.about-img{
+  width: 20rem;
+}
+.article-conhecimentos{
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+.section-conheci{
+  width: 50%;
+  margin: 1.4rem;
+}
+.first{
+  color: var(--titulo-nome);
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.h1-conheci{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.div-conheci{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+}
+.div-conheci p{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  height: 5rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and(min-width:1000px) {
+  .header{
+    justify-content: center;
+    margin: 1rem;
+  }
+  .header h1{
+    font-size: 1.5rem;
+  }
+  .nav-top{
+    display: none;
+  }
+}
+  
